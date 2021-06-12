@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Social Media Icon</title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<style type="text/css">
+
+		*{ margin: 0; padding: 0; }
+		.centerdiv{
+			height:  100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		a{
+			height: 100px;
+			width: 100px; background-color: #f5f6fa;
+			margin: 10px; text-align: center;
+			border-radius:  50px;
+			line-height: 100px; position: relative;
+			box-shadow: 1px 4px 2px 2px #2C3A47;
+			overflow: hidden;
+		}
+		.fa-facebook{
+			color: #3B3B98;
+		}
+		.fa-linkedin{
+			color: #1B9CFC;
+		}
+		.fa-instagram{
+			color: #F97F51;
+		}
+		.fa-twitter{
+			color: #1B9CFC;
+		}
+		.fa-youtube{
+			color: #FC427B;
+		}
+
+		a i{
+			transform: all 0.3s linear;
+		}
+
+		a:hover .fa{  
+			transform: scale(1.5);
+			color: #f5f6fa;
+		}
+
+		a:before{
+			content: "";
+			width: 120px; height: 120px;
+			position: absolute;
+			top: 90%; left: -50%;
+			background-color: #1B9CFC;
+			transform: rotate(60deg);
+		}
+
+		a:hover:before{
+			animation: socialicons 0.8s 1;
+			animation-fill-mode: forwards;SS
+		}
+
+		@keyframes socialicons{
+			0% { top: 90%; left: -50%; }
+			50% { top: -60%; left: -10%;}
+			100%{ top: -10%; left: -10%; }
+		}
+	</style>
+
+</head>
+<body>
+	<div class="centerdiv">
+		<a href="https://www.facebook.com" target="_blank ">
+			<i class="fa fa-2x fa-facebook"> </i>
+		</a>
+		<a href="https://www.linkedin.in" target="_blank ">
+			<i class="fa fa-2x fa-linkedin"> </i>
+		</a>
+		<a href="https://www.instagram.com" target="_blank ">
+			<i class="fa fa-2x fa-instagram"> </i>
+		</a>
+		<a href="https://www.twitter.com" target="_blank ">
+			<i class="fa fa-2x fa-twitter"> </i>
+		</a>
+		<a href="https://www.youtube.com" target="_blank ">
+			<i class="fa fa-2x fa-youtube"> </i>
+		</a>
+	</div>
+
+</body>
+</html>
